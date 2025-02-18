@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+.container {
+    text-align: center;
+}
+
+button {
+    margin: 5px;
+}
+
+#animacion-puerta {
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+}
+
+#animacion-puerta img {
+    width: 50%;
+    transition: opacity 1s ease-in-out;
+}
+
+.puerta-cerrada img {
+    opacity: 1;
+}
+
+.puerta-abierta img {
+    opacity: 0;
+}
+
+.puerta-abierta #puerta-abierta {
+    opacity: 1;
+}
+
+.imagen-uniforme {
+    width: 50%;
+    height: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.neon-border {
+    border: 10px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(90deg, #ff00ff, #00ffff, #ff00ff);
+    animation: neon-border-animation 3s infinite;
+}
+
+@keyframes neon-border-animation {
+    0% {
+        border-image-source: linear-gradient(90deg, #ff00ff, #00ffff, #ff00ff);
+    }
+    25% {
+        border-image-source: linear-gradient(90deg, #00ffff, #ff00ff, #00ffff);
+    }
+    50% {
+        border-image-source: linear-gradient(90deg, #ff00ff, #00ff00, #ff00ff);
+    }
+    75% {
+        border-image-source: linear-gradient(90deg, #00ff00, #ff00ff, #00ff00);
+    }
+    100% {
+        border-image-source: linear-gradient(90deg, #ff00ff, #00ffff, #ff00ff);
+    }
+}
+
+h1, p, label {
+    text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff, 0 0 15px #ff00ff, 0 0 20px #ff00ff, 0 0 25px #ff00ff, 0 0 30px #ff00ff, 0 0 35px #ff00ff;
+}
+
+#resultado p {
+    color: white;
+    text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff, 0 0 15px #00ffff, 0 0 20px #00ffff, 0 0 25px #00ffff, 0 0 30px #00ffff, 0 0 35px #00ffff;
+}
